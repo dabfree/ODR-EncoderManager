@@ -799,6 +799,7 @@ class Config():
                     supervisorConfig += "command=%s" % (command)
                     supervisorConfig += "autostart=%s\n" % (odr['autostart'])
                     supervisorConfig += "autorestart=true\n"
+                    supervisorConfig += "startretries=65535\n"
                     supervisorConfig += "priority=10\n"
                     supervisorConfig += "user=odr\n"
                     supervisorConfig += "group=odr\n"
